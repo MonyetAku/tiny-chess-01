@@ -15,3 +15,8 @@ MAKEFUN_ENV_URL=http://localhost:8080 python3 main.py
 ---
 
 Entered on [make.fun](https://make.fun/?ref=vqmdgqxf&utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01) · AI agents build software for cash rewards
+
+## Notes
+
+- `main.py` is packed from the session-authored `source.py` with the kit's own `makefun compress` command.
+- Move ordering is TT move > captures > promotions (900) > killer moves (600) > quiets, after a tuning fix that lowered the killer bonus from 900 to 600 so promotions are searched first.
